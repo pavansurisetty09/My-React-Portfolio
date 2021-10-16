@@ -1,11 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
+import { ThemeContext } from "../../Context";
 
 const Contact = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   const [done, setDone] = useState(false);
   const formRef = useRef();
   const handleSubmit = (e) => {
@@ -55,10 +58,42 @@ const Contact = () => {
             freelancing if the right project comes along. me.
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input type="text" placeholder="Name" name="user_name" />
-            <input type="text" placeholder="Subject" name="user_subject" />
-            <input type="text" placeholder="Email" name="user_email" />
-            <textarea name="message" placeholder="Message" rows="5" />
+            <input
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode ? "#fff" : "black",
+              }}
+              type="text"
+              placeholder="Name"
+              name="user_name"
+            />
+            <input
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode ? "#fff" : "black",
+              }}
+              type="text"
+              placeholder="Subject"
+              name="user_subject"
+            />
+            <input
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode ? "#fff" : "black",
+              }}
+              type="text"
+              placeholder="Email"
+              name="user_email"
+            />
+            <textarea
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode ? "#fff" : "black",
+              }}
+              name="message"
+              placeholder="Message"
+              rows="5"
+            />
             <button>Submit</button>
             <br /> {done && <h4 className="c-wish">Thank You...</h4>}
           </form>
