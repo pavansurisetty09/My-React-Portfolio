@@ -1,23 +1,23 @@
 export const products = [
   {
     id: 1,
-    img: "https://assets.uigarage.net/content/uploads/2019/09/Depositphotos_56829111_l-2015-1024x769.jpg",
-    link: "http://highalertloots.in",
+    img: "https://res.cloudinary.com/drenxtuen/image/upload/v1634557511/portfolio/projects/movie-mojo_sypcew.png",
+    link: "https://rishirhyspavan.github.io/Movie-Mojo/",
   },
   {
     id: 2,
-    img: "https://www.pixeden.com/media/k2/galleries/1394/001-devices-presentation-app-screens-project-showcase-graphic-psd-mockup.jpg",
+    img: "https://res.cloudinary.com/drenxtuen/image/upload/v1634557457/portfolio/projects/highalertloots_jqplsl.png",
     link: "http://highalertloots.in",
   },
   {
     id: 3,
-    img: "https://www.pixeden.com/media/k2/galleries/1369/001-devices-presentation-app-screens-graphic-psd-mockup.jpg",
-    link: "http://highalertloots.in",
+    img: "https://res.cloudinary.com/drenxtuen/image/upload/v1634499124/portfolio/projects/pavan-portfolio_grere6.png",
+    link: "https://pavankumarsurisetty-portfolio.herokuapp.com",
   },
   {
     id: 4,
-    img: "https://www.pixeden.com/media/k2/galleries/1379/001-devices-presentation-app-screens-project-showcase-graphic-psd-mockup.jpg",
-    link: "http://highalertloots.in",
+    img: "https://res.cloudinary.com/drenxtuen/image/upload/v1634557457/portfolio/projects/monster-rolodex_zxgvkf.png",
+    link: "https://rishirhyspavan.github.io/monsters-rolodex/",
   },
   {
     id: 5,
